@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: url("img/bg1.jpg");
+  height: 100%;
+}
+body.dashboard {
+  background-image: none;
+  background-color: white;
+  height: 100%;
+}
+header {
+  background-color: white;
+  overflow: hidden;
+  padding: 10px;
+}
+
+nav {
+  color: black;
+  width: 100%;
+  font-size: 30px;
+}
+
+.logo.container-fluid {
+  width: 100%;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  padding: 5px;
+}
+
+.logo {
+  float: left;
+}
+.logo .logo-image {
+  height: 45px;
+}
+
+.nav.navbar-nav {
+  float: right;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main.dashboard {
+  color: black;
+}
+.main-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.awesome-tweets {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.full-name, .trending, .tweet-form, .tweets {
+  color: black;
+  /*radius: 1px solid black;*/
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: GhostWhite;
+  /*border: 1px solid */
+}
+
+.tweet-form {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.tweet-user-image {
+  float: left;
+}
+.tweet-user-image>img {
+  width: 90px;
+}
+.tweet-content {
+
+}
