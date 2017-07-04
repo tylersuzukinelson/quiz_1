@@ -68,6 +68,7 @@ main.dashboard {
   margin-bottom: 10px;
   overflow: hidden;
   background-color: GhostWhite;
+  font-size: 17px;
   /*border: 1px solid */
 }
 
@@ -82,6 +83,7 @@ main.dashboard {
 
 .tweet-user-image {
   float: left;
+  margin-right: 10px;
 }
 .tweet-user-image>img {
   width: 90px;
