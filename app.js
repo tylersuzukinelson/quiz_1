@@ -3,6 +3,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cookieParser = require('cookie-parser');
+const MAX_AGE = 1000*60*60*24;
 
 
 const app = express();
@@ -36,8 +37,8 @@ app.post('/dashboard', function(req, res){
   // Initialize tweetHistory with existing cookie content or an empty array
   let {tweetHistory} = (req.cookies.tweetHistory)? req.cookies : {tweetHistory: []};
   tweetHistory.push(userTweet);
-  res.cookie('tweetHistory', tweetHistory, {maxAge: 1000*60*60*24});
-  res.render('dashboard', {tweetHistory:{tweetHistory}})
+  res.cookie('tweetHistory', tweetHistory, {maxAge: MAX_AGE});
+  res.render('dashboard', {tweetHistory: {tweetHistory}})
 });
 
 const PORT = 5000;
